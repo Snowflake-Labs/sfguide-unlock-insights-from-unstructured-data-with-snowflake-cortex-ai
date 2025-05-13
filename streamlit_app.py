@@ -1,13 +1,8 @@
 # Import required libraries
 import streamlit as st
-import altair as alt
 import pandas as pd
-import json
 import os
 import io
-from snowflake.snowpark.context import get_active_session
-from snowflake.snowpark.functions import col
-from snowflake.snowpark import DataFrame
 from snowflake.snowpark.context import get_active_session
 
 # Constants
