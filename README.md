@@ -20,7 +20,7 @@ This guide demonstrates how to create a Streamlit application running inside Sno
 It shows how to translate, summarize, classify text, generate emails, and even analyze images — all without deploying external infrastructure.
 
 ### Prerequisites
-- Snowflake account in a [supported region for Cortex functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions#label-cortex-llm-availability)
+- Snowflake account
 - ACCOUNTADMIN role
 
 ### What You’ll Learn
