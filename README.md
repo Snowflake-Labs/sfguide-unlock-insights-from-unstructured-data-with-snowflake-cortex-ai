@@ -68,7 +68,6 @@ In the same SQL worksheet, run the following SQL commands to create the [warehou
 
 > IMPORTANT:
 > - If you use different names for objects created in this section, be sure to update scripts and code in the following sections accordingly.
-> - For each SQL script block below, select all the statements in the block and execute them top to bottom.
 
 ```sql
 -- Set role context
