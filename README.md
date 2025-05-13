@@ -1,3 +1,15 @@
+<!--
+summary: Unlock Insights from Unstructured Data with Snowflake Cortex AI
+id: unlock_insights_from_unstructured_data_with_snowflake_cortex_ai
+categories: data-engineering,ai,app-development
+environments: web
+status: Published
+feedback link: https://github.com/Snowflake-Labs/sfguides/issues
+tags: Snowflake Cortex, Generative AI, Streamlit, Snowflake, Data Applications, Multimodal AI
+author: Sean Morris, Stephen Dickson
+[environment_name]: ai209
+-->
+
 # Unlock Insights from Unstructured Data with Snowflake Cortex AI
 <!-- ------------------------ -->
 ## Overview
