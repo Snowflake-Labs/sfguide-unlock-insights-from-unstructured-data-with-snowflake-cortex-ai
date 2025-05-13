@@ -151,16 +151,22 @@ The application provides:
 
 Duration: 5
 
-Congratulations! You've successfully built an end-to-end image analysis application using AI models via Snowflake Cortex. This solution allows you to extract valuable insights from images, detect emotions, analyze scenes, and generate rich descriptions - all within the Snowflake environment.
+Congratulations! You’ve successfully built an end-to-end image analysis application using Snowflake Cortex AI models. This app showcases how to unlock value from unstructured data — including text and images - all within the Snowflake environment.
 
-To continue your learning journey, explore creating more advanced prompting techniques, building domain-specific image analysis systems, or integrating this capability with other Snowflake data workflows.
+By combining Snowflake-native large language models (LLMs) and multimodal capabilities with Streamlit, you built an interactive solution that can:
+- Translate and classify text across multiple languages
+- Analyze sentiment and summarize long-form content
+- Automatically generate emails and next-best-actions from transcripts
+- Perform real-time image analysis using multimodal foundation models
+
+This end-to-end pattern demonstrates how Snowflake Cortex can power intelligent applications directly on top of your data, reducing time-to-insight and simplifying operational complexity.
 
 ### What You Learned
-- How to set up Snowflake for image storage and processing
-- How to use AI models like Claude 3.5 Sonnet and Pixtral-large for multimodal analysis
-- How to create custom prompts for specialized image analysis
-- How to build a Streamlit application for interactive image analysis
-- How to implement batch processing for multiple images
+- How to provision warehouses, databases, schemas, and stages in Snowflake
+- How to store and process unstructured text and image data
+- How to run SQL-based AI functions (TRANSLATE, SUMMARIZE, SENTIMENT, etc.)
+- How to analyze visual data using foundation models
+- How to build a secure, fully integrated frontend using Streamlit in Snowflake
 
 ### Related Resources
 - [Snowflake Cortex Documentation](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-llm-rest-api)
