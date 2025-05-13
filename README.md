@@ -105,7 +105,7 @@ Download sample [images](https://github.com/Snowflake-Labs/sfguide-unlock-insigh
 
 ### Upload Images
 
-In the Snowsight UI on the left hand sidebar, select the **Data > Databases** tab and navigate to **AI209_DB > PUBLIC > STAGE > IMAGES_STAGE**.
+In the Snowsight UI on the left hand sidebar, select the **Data > Databases** tab and navigate to **AI209_DB > PUBLIC > STAGES > IMAGES_STAGE**.
 
 In the top right hand corner, click **+ Files** to upload files to the stage.
 
@@ -116,7 +116,7 @@ Navigate back to the SQL worksheet and run the following SQL commands to verify 
 
 Duration: 5
 
-Lets create a Streamlit application for interactive image analysis:
+Let's create a Streamlit application for interactive image analysis:
 
 ### Setting Up the Streamlit App
 
@@ -127,10 +127,10 @@ To create and configure your Streamlit application in Snowflake:
    * Click on **+ Streamlit App** button in the top right
 
 2. Configure App Settings:
-   * Enter a name for your app (e.g., "AI/ML Tookit")
-   * Select the warehouse ai209_wh
-   * Choose ai209_db.public as your database and schema
-   * Click "Create"
+   * Enter a name for your app (e.g., "AI/ML Toolkit")
+   * Select the warehouse **AI209_WH**
+   * Choose **AI209_DB.PUBLIC** as your database and schema
+   * Click **Create**
 
 3. Create the app:
    * In the editor, paste the complete code provided in the [streamlit_app.py](https://github.com/Snowflake-Labs/sfguide-unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/blob/main/streamlit_app.py) file
