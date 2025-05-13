@@ -105,7 +105,7 @@ CREATE STAGE IF NOT EXISTS images_stage
 
 ### Download Images
 
-Download the [images.zip](https://github.com/Snowflake-Labs/unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/blob/main/images.zip) and unzip.
+Download the [images.zip](https://github.com/Snowflake-Labs/sfguide-unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/tree/main/images) and unzip.
 
 ### Upload Images
 
