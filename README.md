@@ -76,6 +76,7 @@ USE WAREHOUSE ai209_wh;
 CREATE DATABASE IF NOT EXISTS ai209_db;
 CREATE SCHEMA IF NOT EXISTS ai209_db.public;
 USE SCHEMA ai209_db.public;
+```
 
 ### Download Images
 
