@@ -71,7 +71,7 @@ In the same SQL worksheet, run the following SQL commands to create the [warehou
 
 ```sql
 -- Set role context
-USE ROLE syadmin;
+USE ROLE sysdmin;
 
 -- Set Environment Name
 SET var_name = 'ai209';
