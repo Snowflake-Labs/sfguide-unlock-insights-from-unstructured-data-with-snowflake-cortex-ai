@@ -137,7 +137,7 @@ To create and configure your Streamlit application in Snowflake:
    * Click "Create"
 
 3. Create the app:
-   * In the editor, paste the complete code provided in the [streamlit_app.py](https://github.com/Snowflake-Labs/sfguide-getting-started-with-image-classification-with-anthropic-snowflake-cortex/blob/main/image_analysis_streamlit.py) file
+   * In the editor, paste the complete code provided in the [streamlit_app.py](https://github.com/Snowflake-Labs/sfguide-unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/blob/main/streamlit_app.py) file
    * Click "Run" to launch your application
 
 The application provides:
