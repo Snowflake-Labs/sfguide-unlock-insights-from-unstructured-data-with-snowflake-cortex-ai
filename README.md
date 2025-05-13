@@ -169,6 +169,6 @@ This end-to-end pattern demonstrates how Snowflake Cortex can power intelligent 
 - How to build a secure, fully integrated frontend using Streamlit in Snowflake
 
 ### Related Resources
-- [Snowflake Cortex Documentation](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-llm-rest-api)
-- [Anthropic Tool Use on Snowflake Cortex Quickstart](https://quickstarts.snowflake.com/guide/getting-started-with-tool-use-on-cortex-and-anthropic-claude/index.html?index=..%2F..index#0)
-- [Anthropic RAG on Snowflake Cortex Quickstart](https://quickstarts.snowflake.com/guide/getting_started_with_anthropic_on_snowflake_cortex/index.html?index=..%2F..index#0)
+- [Snowflake Large Language Model (LLM) Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions)
+- [Snowflake Cross-region inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference)
+- [Snowflake Cortex COMPLETE Multimodal](https://docs.snowflake.com/en/user-guide/snowflake-cortex/complete-multimodal)
