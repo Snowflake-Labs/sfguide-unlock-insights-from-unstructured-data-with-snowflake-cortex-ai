@@ -101,7 +101,7 @@ CREATE STAGE IF NOT EXISTS images_stage
 
 ### Download Images
 
-Download sample images from (https://github.com/Snowflake-Labs/sfguide-unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/tree/main/images).
+Download sample [images](https://github.com/Snowflake-Labs/sfguide-unlock-insights-from-unstructured-data-with-snowflake-cortex-ai/tree/main/images).
 
 ### Upload Images
 
