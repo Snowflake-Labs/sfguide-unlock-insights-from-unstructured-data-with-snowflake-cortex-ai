@@ -106,7 +106,7 @@ Navigate back to the SQL worksheet and run the following SQL commands to verify 
 <!-- ------------------------ -->
 ## Build Streamlit Application
 
-Duration: 15
+Duration: 5
 
 Lets create a Streamlit application for interactive image analysis:
 
