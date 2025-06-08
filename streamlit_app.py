@@ -36,23 +36,23 @@ class SecureSnowflakeApp:
     }
 
     FOUNDATIONAL_MODELS = frozenset([
-        "claude-4-sonnet", "claude-3-7-sonnet", "llama4-maverick", "llama4-scout",
+        "openai-gpt-4.1","claude-4-sonnet", "claude-3-7-sonnet", "llama4-maverick", "llama4-scout",
         "deepseek-r1", "snowflake-arctic", "mistral-large2", "reka-flash",
         "reka-core", "llama3.1-405b", "llama3.2-1b", "llama3.2-3b", "mistral-7b"
     ])
 
     MULTIMODAL_MODELS = frozenset([
-        "pixtral-large", "claude-3-7-sonnet", "claude-4-sonnet", "claude-4-opus"
+        "openai-gpt-4.1","pixtral-large", "claude-3-7-sonnet", "claude-4-sonnet", "claude-4-opus"
     ])
 
     EMAIL_MODELS = frozenset([
-        "claude-4-sonnet", "claude-3-7-sonnet", "snowflake-arctic",
+        "openai-gpt-4.1","claude-4-sonnet", "claude-3-7-sonnet", "snowflake-arctic",
         "llama4-maverick", "llama4-scout", "deepseek-r1", "mistral-large",
         "reka-flash", "reka-core", "llama3.1-405b"
     ])
 
     QA_MODELS = frozenset([
-        "claude-4-sonnet", "claude-3-7-sonnet", "snowflake-arctic",
+        "openai-gpt-4.1","claude-4-sonnet", "claude-3-7-sonnet", "snowflake-arctic",
         "llama4-maverick", "llama4-scout", "deepseek-r1", "mistral-large2",
         "reka-flash", "reka-core", "mixtral-8x7b"
     ])
@@ -228,7 +228,7 @@ def read_svg(path: str) -> Optional[str]:
 def create_card_container(content_func):
     """Helper function to create consistent card styling"""
     with stylable_container(
-        "Card1",
+        "Card1", 
         css_styles="border: 1px groove #52546a; border-radius: 10px; padding: 25px; box-shadow: -6px 8px 20px 1px #00000052;"
     ):
         content_func()
@@ -237,13 +237,13 @@ def toolsapp():
     """Display the welcome page with logos and header information"""
     with st.container():
         svg_content = read_svg("Snowflake.svg")
-
+  
         cl1, cl2 = st.columns([5, 1])
 
         with cl1:
             create_card_container(lambda: st.write(" "))
             st.title("Unlock Insights from Unstructured Data with Snowflake Cortex AI")
-
+                      
             st.metric(
                 " ",
                 "Snowflake Summit HOL: AI209",
@@ -267,13 +267,13 @@ def translate():
         col1, col2 = st.columns(2)
         with col1:
             from_language = st.selectbox(
-                "From",
+                "From", 
                 options=list(app.SUPPORTED_LANGUAGES.keys()),
                 index=list(app.SUPPORTED_LANGUAGES.keys()).index("English")
             )
         with col2:
             to_language = st.selectbox(
-                "To",
+                "To", 
                 options=list(app.SUPPORTED_LANGUAGES.keys()),
                 index=list(app.SUPPORTED_LANGUAGES.keys()).index("Spanish")
             )
@@ -290,8 +290,8 @@ def translate():
             sanitized_text = app.sanitize_input(xlate_entered_text, 5000)
             query = "SELECT snowflake.cortex.translate(?, ?, ?) as response"
             params = [
-                sanitized_text,
-                app.SUPPORTED_LANGUAGES[from_language],
+                sanitized_text, 
+                app.SUPPORTED_LANGUAGES[from_language], 
                 app.SUPPORTED_LANGUAGES[to_language]
             ]
 
@@ -302,7 +302,7 @@ def translate():
 def sentiment():
     """Sentiment analysis functionality using Snowflake Cortex AI"""
     with st.container():
-
+        
         st.header("Sentiment Analysis With Snowflake Cortex")
 
         sent_entered_transcript = st.text_area(
@@ -326,7 +326,7 @@ def sentiment():
 def supersum():
     """Text summarization functionality using Snowflake Cortex AI"""
     with st.container():
-
+        
         st.header("Summarize Data With Snowflake Cortex")
 
         ssum_entered_text = st.text_area(
@@ -350,11 +350,11 @@ def supersum():
 def nextba():
     """Next Best Action recommendation using Snowflake foundational LLMs"""
     with st.container():
-
+        
         st.header("Use a Snowflake Foundational LLM to Identify Customer Next Best Action")
 
         next_selected_model = st.selectbox(
-            "Which Foundational Model:",
+            "Which Foundational Model:", 
             options=list(app.FOUNDATIONAL_MODELS)
         )
 
@@ -393,7 +393,7 @@ def nextba():
 def classify():
     """Text classification functionality using Snowflake Cortex AI"""
     with st.container():
-
+        
         st.header("Classify Data With Snowflake Cortex")
 
         class_entered_text = st.text_area(
@@ -407,7 +407,7 @@ def classify():
         if class_entered_text:
             sanitized_text = app.sanitize_input(class_entered_text, 10000)
             categories = [
-                'Complete Refund', 'Exchange Tickets', 'Refund Fees',
+                'Complete Refund', 'Exchange Tickets', 'Refund Fees', 
                 'Discount Sale', 'Send a Nice Thank You E-mail', 'No Category'
             ]
 
@@ -424,11 +424,11 @@ def classify():
 def emailcomplete():
     """Email generation functionality using Snowflake foundational LLMs"""
     with st.container():
-
+        
         st.header("Generate a Customer E-Mail With Snowflake Cortex Complete")
 
         email_selected_model = st.selectbox(
-            "Which Foundational Model:",
+            "Which Foundational Model:", 
             options=list(app.EMAIL_MODELS)
         )
 
@@ -462,16 +462,16 @@ def emailcomplete():
                 result = app.execute_safe_sql(query, params)
                 if result is not None and not result.empty:
                     st.caption("Customer E-Mail:")
-                    st.write(result.iloc[0]["RESPONSE"])
+                    st.write(result.iloc[0]["RESPONSE"])                
 
 def askaquestion():
     """General question-answering functionality using Snowflake foundational LLMs"""
     with st.container():
-
+        
         st.header("Use a Snowflake Foundational LLM to Ask a Question")
 
         askq_selected_model = st.selectbox(
-            "Which Foundational Model:",
+            "Which Foundational Model:", 
             options=list(app.QA_MODELS)
         )
 
@@ -552,7 +552,7 @@ def mmimage():
     st.write("Upload files to Snowflake stage.")
 
     uploaded_file = st.file_uploader(
-        "Choose a file",
+        "Choose a file", 
         type=['jpg', 'jpeg', 'png', 'webp', 'pdf']
     )
 
@@ -561,7 +561,7 @@ def mmimage():
 
         if handle_file_upload(uploaded_file, stage_name, file_extension[1:]):
             image_selected_model = st.selectbox(
-                "Which Multi-Modal Model:",
+                "Which Multi-Modal Model:", 
                 options=list(app.MULTIMODAL_MODELS)
             )
 
@@ -634,7 +634,7 @@ def mmaudio():
     st.write("Upload files to Snowflake stage.")
 
     uploaded_file = st.file_uploader(
-        "Choose a file",
+        "Choose a file", 
         type=['mp3', 'wav', 'm4a', 'flac']
     )
 
