@@ -26,8 +26,3 @@ USE WAREHOUSE IDENTIFIER($var_warehouse_name);
 CREATE DATABASE IF NOT EXISTS IDENTIFIER($var_database_name);
 CREATE SCHEMA IF NOT EXISTS IDENTIFIER($var_schema_name);
 USE SCHEMA IDENTIFIER($var_schema_name);
-    
--- Create Images Stage
-CREATE STAGE IF NOT EXISTS images_stage
-    DIRECTORY = ( ENABLE = true )
-    ENCRYPTION = ( TYPE = 'SNOWFLAKE_SSE' );
